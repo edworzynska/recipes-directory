@@ -4,7 +4,7 @@ import lombok.Setter;
 
 @Entity
 @Table(name="Recipes")
-
+//lombok @Data annotation would get rid of all of those getters and setters here...
 public class Recipe {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "recipe_seq")

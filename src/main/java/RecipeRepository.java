@@ -10,7 +10,7 @@ public class RecipeRepository {
     public RecipeRepository(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
-
+//findAll
     public List<Recipe> all() {
         List<Recipe> allRecipes = null;
         try (Session session = sessionFactory.openSession()) {
